@@ -22,7 +22,7 @@ Note:  nvm installs BOTH node and npm.
 
 Otherwise, install npm and the LTS version of node from the node.js website.
 
-Now, we can install react-native
+Now, we can install react-native globally on your system
 
 ```
 npm install -g react-native-cli
@@ -31,8 +31,3 @@ npm install -g react-native-cli
 Now that we have installed what we need, we can train the machine learning model.
 
 # Train the Machine Learning Model
-
-
-
-
-

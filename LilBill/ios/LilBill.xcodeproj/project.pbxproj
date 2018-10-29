@@ -360,18 +360,12 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		A89BAACA56034577934DBBD6 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
-		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		CADC60315A994630869C7457 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
-=======
 		8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
 		A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilBill-Bridging-Header.h"; sourceTree = "<group>"; };
 		E038BA082182C798004F20E8 /* Bridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridger.swift; sourceTree = "<group>"; };
 		E038BA192182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotDogOrNotHotDog.mlmodelc; sourceTree = "<group>"; };
->>>>>>> 0b3ec3278121b2aa7a151df79c0fb7f8ede2c06e
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,11 +393,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
-<<<<<<< HEAD
-				98686C4B753844D481A580BD /* libCoreMLImage.a in Frameworks */,
-=======
 				B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */,
->>>>>>> 0b3ec3278121b2aa7a151df79c0fb7f8ede2c06e
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,11 +596,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
-<<<<<<< HEAD
-				CADC60315A994630869C7457 /* CoreMLImage.xcodeproj */,
-=======
 				A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */,
->>>>>>> 0b3ec3278121b2aa7a151df79c0fb7f8ede2c06e
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -634,12 +620,8 @@
 				00E356EF1AD99517003FC87E /* LilBillTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-<<<<<<< HEAD
-				11E77D83217FD42E004BA321 /* Recovered References */,
-=======
 				E038B9DC2182C775004F20E8 /* Recovered References */,
 				E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */,
->>>>>>> 0b3ec3278121b2aa7a151df79c0fb7f8ede2c06e
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -797,13 +779,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-<<<<<<< HEAD
-					ProductGroup = 11E77DA9217FD42F004BA321 /* Products */;
-					ProjectRef = CADC60315A994630869C7457 /* CoreMLImage.xcodeproj */;
-=======
 					ProductGroup = E038BA022182C777004F20E8 /* Products */;
 					ProjectRef = A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */;
->>>>>>> 0b3ec3278121b2aa7a151df79c0fb7f8ede2c06e
 				},
 				{
 					ProductGroup = 00C302A81ABCB8CE00DB3ED1 /* Products */;

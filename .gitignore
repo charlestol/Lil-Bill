@@ -2,6 +2,11 @@
 #
 .DS_Store
 
+coreml-training-tools/
+
+# Python
+venv/
+
 # Xcode
 #
 build/

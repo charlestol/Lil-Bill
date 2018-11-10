@@ -5,6 +5,9 @@ import {
   Text,
   View
 } from 'react-native';
+// import Tts from 'react-native-tts';
+var Speech = require('react-native-speech');
+
 
 const BEST_MATCH_THRESHOLD = 0.5;
 
@@ -49,6 +52,10 @@ export default class App extends Component<{}> {
 
   }
 
+  // readText = async () => {
+  //     Tts.stop();
+  //   };
+
 
   render() {
     let classification = null;
@@ -56,10 +63,22 @@ export default class App extends Component<{}> {
     if (this.state.bestMatch) {
       if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "hotdog") {
         classification = "🌭 Hot Dog 🌭";
+        // Tts.speak("$1");
+
+          Speech.speak({
+             text: 'Hot Dog',
+             voice: 'en-US'
+           })
+           .then(started => {
+             console.log('Speech started');
+           })
+           .catch(error => {
+             console.log('You\'ve already started a speech instance.');
+           });
+
       } else {
         classification = "Not hot dog";
       }
-
     }
 
     return (

@@ -5,9 +5,9 @@ import {
   Text,
   View
 } from 'react-native';
-// import Tts from 'react-native-tts';
+// import { Container, Content } from 'native-base'
 var Speech = require('react-native-speech');
-
+var Vibration = require('react-native-vibration');
 
 const BEST_MATCH_THRESHOLD = 0.5;
 
@@ -52,18 +52,13 @@ export default class App extends Component<{}> {
 
   }
 
-  // readText = async () => {
-  //     Tts.stop();
-  //   };
-
-
   render() {
     let classification = null;
 
     if (this.state.bestMatch) {
       if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "hotdog") {
         classification = "🌭 Hot Dog 🌭";
-        // Tts.speak("$1");
+          Vibration.vibrate();
 
           Speech.speak({
              text: 'Hot Dog',

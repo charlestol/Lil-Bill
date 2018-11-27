@@ -39,7 +39,8 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */; };
-		E00C7BB1218C22D8002FCB12 /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E00C7B7D218C22C5002FCB12 /* DollarBillModel.mlmodelc */; };
+		E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
+		E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
 /* End PBXBuildFile section */
 
@@ -355,7 +356,7 @@
 		8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
 		A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		E00C7B7D218C22C5002FCB12 /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; name = DollarBillModel.mlmodelc; path = "/Users/miguelhernandez/SoftwareDev/UCM-class-code/CSE155/Lil-Bill/LilBill/ios/DollarBillModel.mlmodelc"; sourceTree = "<absolute>"; };
+		E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 		E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilBill-Bridging-Header.h"; sourceTree = "<group>"; };
 		E038BA082182C798004F20E8 /* Bridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -589,8 +590,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				E00C7B7D218C22C5002FCB12 /* DollarBillModel.mlmodelc */,
 				E038BA082182C798004F20E8 /* Bridger.swift */,
+				E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */,
 				13B07FAE1A68108700A75B9A /* LilBill */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LilBillTests */,
@@ -1099,7 +1100,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E00C7BB1218C22D8002FCB12 /* DollarBillModel.mlmodelc in Resources */,
+				E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -1167,6 +1168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				E038BA092182C798004F20E8 /* Bridger.swift in Sources */,
 			);

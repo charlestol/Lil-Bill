@@ -109,3 +109,9 @@ python convert-to-coreml.py
 This uses the training data you have downloaded in download-images/training_data and creates an ML model file.
 It takes a little while to run (the time varies depending on how much data you have), but once it has completed you will have a brand new shiny model file called MyClassifier.mlmodel.
 This file can be dragged straight into XCode and used in our project.
+
+When you import the `Classifier.mlmodel` file into XCode, make sure to rename it to
+`Classifier.mlmodelc`
+
+Then, in the build phases section of the project, under copy bundle resources,
+add the `Classifier.mlmodelc`.

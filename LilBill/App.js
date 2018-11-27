@@ -6,8 +6,9 @@ import {
   View
 } from 'react-native';
 var Speech = require('react-native-speech');
+var Vibration = require('react-native-vibration');
 
-const BEST_MATCH_THRESHOLD = 0.6;
+const BEST_MATCH_THRESHOLD = 0.5;
 
 import CoreMLImage from "react-native-core-ml-image";
 
@@ -55,21 +56,17 @@ export default class App extends Component<{}> {
 
   }
 
-  // readText = async () => {
-  //     Tts.stop();
-  //   };
-
-
   render() {
     let classification = null;
     let { classifications } = this.state || [];
 
     if (this.state.bestMatch) {
       if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "hotdog") {
-        classification = classification.identifier;
-
+          Vibration.vibrate();
+          classification = classification.identifier;
+        
           Speech.speak({
-             text: classification.identifier,
+             text: classification,
              voice: 'en-US'
            })
            .then(started => {

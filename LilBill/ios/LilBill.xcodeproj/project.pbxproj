@@ -39,7 +39,10 @@
 		923C05781B6A4B998EFD3C9A /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */; };
+		E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
+		E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
+<<<<<<< HEAD
 		E038BA402182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E038BA192182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc */; };
 		E1EBFAB6B7C94185863CF6B0 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */; };
 		65D3574DB9A54DC98F959896 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FDCA57C654EDE89127FE1 /* Entypo.ttf */; };
@@ -56,6 +59,8 @@
 		1BD1403A90194C81B7D3A667 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 433CF0D5D3D646239624528A /* rubicon-icon-font.ttf */; };
 		8EB29CCA90664D5A9D0CAC69 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71D115613C294E44BE5C0995 /* SimpleLineIcons.ttf */; };
 		EF2251572F7F48F1914C369F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B1EC6597B594F3E8040442A /* Zocial.ttf */; };
+=======
+>>>>>>> 923a982467e202f69c4f9b5c668fb6c134bf2e3f
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -386,10 +391,10 @@
 		8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
 		A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSpeechSynthesizer.a; sourceTree = "<group>"; };
+		E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 		E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilBill-Bridging-Header.h"; sourceTree = "<group>"; };
 		E038BA082182C798004F20E8 /* Bridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridger.swift; sourceTree = "<group>"; };
-		E038BA192182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = HotDogOrNotHotDog.mlmodelc; sourceTree = "<group>"; };
+		B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSpeechSynthesizer.a; sourceTree = "<group>"; };
 		F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTextToSpeech.a; sourceTree = "<group>"; };
 		0A8FDCA57C654EDE89127FE1 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		0306B84064ED41EE981B5C83 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
@@ -657,7 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				E038BA082182C798004F20E8 /* Bridger.swift */,
-				E038BA192182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc */,
+				E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */,
 				13B07FAE1A68108700A75B9A /* LilBill */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LilBillTests */,
@@ -1214,8 +1219,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				E038BA402182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				65D3574DB9A54DC98F959896 /* Entypo.ttf in Resources */,
 				EAAC5BE93C174014815033A3 /* EvilIcons.ttf in Resources */,
@@ -1296,6 +1301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				E038BA092182C798004F20E8 /* Bridger.swift in Sources */,
 			);

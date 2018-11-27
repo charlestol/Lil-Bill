@@ -5,7 +5,7 @@ import {
   Text,
   View
 } from 'react-native';
-import debounce from 'lodash/debounce';
+var Speech = require('react-native-speech');
 
 const BEST_MATCH_THRESHOLD = 0.6;
 
@@ -55,30 +55,41 @@ export default class App extends Component<{}> {
 
   }
 
+  // readText = async () => {
+  //     Tts.stop();
+  //   };
+
 
   render() {
     let classification = null;
     let { classifications } = this.state || [];
 
-    // if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "one-dollar-bill") {
-    //   classification = "ONE DOLLAR BILL";
-    // }
-    // else {
-    //   classification = "NOT DOLLAR BILL";
-    // }
+    if (this.state.bestMatch) {
+      if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "hotdog") {
+        classification = classification.identifier;
+
+          Speech.speak({
+             text: classification.identifier,
+             voice: 'en-US'
+           })
+           .then(started => {
+             console.log('Speech started');
+           })
+           .catch(error => {
+             console.log('You\'ve already started a speech instance.');
+           });
+
+      } 
+//       else {
+//         classification = "Not hot dog";
+//       }
+    }
 
     return (
       <View style={styles.container}>
         <CoreMLImage modelFile="DollarBillModel" onClassification={(evt) => this.onClassification(evt)}>
-          <View style={styles.container}>
-            {/*<Text style={styles.info}>{classification}</Text>*/}
-            {
-              classifications.map((classification) => {
-                return (
-                  <Text key={classification.identifier} style={styles.info}>Identifier: {classification.identifier}, Confidence: {classification.confidence}</Text>
-                );
-              })
-            }
+          <View style={styles.container}>         
+            <Text key={classification.identifier} style={styles.info}>classification</Text>
           </View>
         </CoreMLImage>
       </View>

@@ -42,25 +42,6 @@
 		E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
-<<<<<<< HEAD
-		E038BA402182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E038BA192182C973004F20E8 /* HotDogOrNotHotDog.mlmodelc */; };
-		E1EBFAB6B7C94185863CF6B0 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */; };
-		65D3574DB9A54DC98F959896 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A8FDCA57C654EDE89127FE1 /* Entypo.ttf */; };
-		EAAC5BE93C174014815033A3 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0306B84064ED41EE981B5C83 /* EvilIcons.ttf */; };
-		8DFFA36B6D96466AB18040B1 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 59EA66D7471E4BCBA6306D24 /* Feather.ttf */; };
-		93F2F931785A45ADAC8198BE /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6C5EFF5C54F4FBCB47C0831 /* FontAwesome.ttf */; };
-		A65CD4DFFD644A44B43ACD05 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF416C00375448E96CB48AC /* Foundation.ttf */; };
-		C20B7B489E9047A09A76F0D8 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F3060C8C227B4D4AB1C047AB /* Ionicons.ttf */; };
-		86A8BFB1F3F442779A18C19C /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B97F3DD66A574A0494C83606 /* MaterialCommunityIcons.ttf */; };
-		EFD902E2107F4091B989CCD0 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 026E9BBD7B804896A490B707 /* MaterialIcons.ttf */; };
-		EFE57C6A199643058324EE00 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D77E62E326984BB3887BAA0D /* Octicons.ttf */; };
-		DE3A8A5416D64C09A3CD7E74 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B139AB3703CD46D3AE4A88D4 /* Roboto_medium.ttf */; };
-		5B95BF6ECE32437C8FACC515 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 407C310D56FC4890A8EB1911 /* Roboto.ttf */; };
-		1BD1403A90194C81B7D3A667 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 433CF0D5D3D646239624528A /* rubicon-icon-font.ttf */; };
-		8EB29CCA90664D5A9D0CAC69 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 71D115613C294E44BE5C0995 /* SimpleLineIcons.ttf */; };
-		EF2251572F7F48F1914C369F /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B1EC6597B594F3E8040442A /* Zocial.ttf */; };
-=======
->>>>>>> 923a982467e202f69c4f9b5c668fb6c134bf2e3f
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

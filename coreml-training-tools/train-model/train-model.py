@@ -18,7 +18,8 @@ data.explore()
 train_data, test_data = data.random_split(0.8)
 
 # Automatically picks the right model based on your data.
-model = tc.image_classifier.create(data, target='label', max_iterations=30)
+model = tc.image_classifier.create(data, target='label', max_iterations=50)
+
 
 # Save predictions to an SArray
 predictions = model.predict(data)

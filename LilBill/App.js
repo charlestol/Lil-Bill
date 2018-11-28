@@ -75,6 +75,10 @@ export default class App extends Component<{}> {
 
   }, 1000);
 
+  // readText = async () => {
+  //     Tts.stop();
+  //   };
+
 
   render() {
     let classification = null;

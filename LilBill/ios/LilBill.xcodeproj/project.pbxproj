@@ -5,6 +5,7 @@
 	};
 	objectVersion = 46;
 	objects = {
+
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -22,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		2CE2B4F1A5124910884BECC4 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -36,12 +38,11 @@
 		2DCD954D1E0B4F2C00145EB5 /* LilBillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LilBillTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		923C05781B6A4B998EFD3C9A /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */; };
-		E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
-		E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
+		E046103C21AE3B01009A9F12 /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E046103B21AE3B00009A9F12 /* DollarBillModel.mlmodelc */; };
+		E046103D21AE3B20009A9F12 /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E046103B21AE3B00009A9F12 /* DollarBillModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,20 +87,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = LilBill;
-		};
-		11CB41842194D27D0022E97F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 387230C26F6841C7BAB95AE7 /* TextToSpeech.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A6FB2081D99E12200593599;
-			remoteInfo = TextToSpeech;
-		};
-		11CB41892194D27D0022E97F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 506340A66DAF45DE9D17342B /* SpeechSynthesizer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = SpeechSynthesizer;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -339,6 +326,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = CoreMLImage;
 		};
+		E0477B9521AE10970046C4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = SpeechSynthesizer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -364,33 +358,17 @@
 		2D02E47B1E0B4A5D006451C7 /* LilBill-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LilBill-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* LilBill-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LilBill-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		387230C26F6841C7BAB95AE7 /* TextToSpeech.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = TextToSpeech.xcodeproj; path = "../node_modules/react-native-tts/ios/TextToSpeech.xcodeproj"; sourceTree = "<group>"; };
-		506340A66DAF45DE9D17342B /* SpeechSynthesizer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SpeechSynthesizer.xcodeproj; path = "../node_modules/react-native-speech/SpeechSynthesizer.xcodeproj"; sourceTree = "<group>"; };
+		4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SpeechSynthesizer.xcodeproj; path = "../node_modules/react-native-speech/SpeechSynthesizer.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSpeechSynthesizer.a; sourceTree = "<group>"; };
 		8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
 		A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 		E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilBill-Bridging-Header.h"; sourceTree = "<group>"; };
 		E038BA082182C798004F20E8 /* Bridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridger.swift; sourceTree = "<group>"; };
-		B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSpeechSynthesizer.a; sourceTree = "<group>"; };
-		F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libTextToSpeech.a; sourceTree = "<group>"; };
-		0A8FDCA57C654EDE89127FE1 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0306B84064ED41EE981B5C83 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		59EA66D7471E4BCBA6306D24 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A6C5EFF5C54F4FBCB47C0831 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		5BF416C00375448E96CB48AC /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F3060C8C227B4D4AB1C047AB /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B97F3DD66A574A0494C83606 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		026E9BBD7B804896A490B707 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D77E62E326984BB3887BAA0D /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B139AB3703CD46D3AE4A88D4 /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		407C310D56FC4890A8EB1911 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		433CF0D5D3D646239624528A /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		71D115613C294E44BE5C0995 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2B1EC6597B594F3E8040442A /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E046103B21AE3B00009A9F12 /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,8 +397,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */,
-				923C05781B6A4B998EFD3C9A /* libTextToSpeech.a in Frameworks */,
-				E1EBFAB6B7C94185863CF6B0 /* libSpeechSynthesizer.a in Frameworks */,
+				2CE2B4F1A5124910884BECC4 /* libSpeechSynthesizer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,22 +484,6 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		11CB41812194D27D0022E97F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11CB41852194D27D0022E97F /* libTextToSpeech.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		11CB41862194D27D0022E97F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11CB418A2194D27D0022E97F /* libSpeechSynthesizer.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
@@ -624,8 +585,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */,
-				387230C26F6841C7BAB95AE7 /* TextToSpeech.xcodeproj */,
-				506340A66DAF45DE9D17342B /* SpeechSynthesizer.xcodeproj */,
+				4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -642,8 +602,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E046103B21AE3B00009A9F12 /* DollarBillModel.mlmodelc */,
 				E038BA082182C798004F20E8 /* Bridger.swift */,
-				E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */,
 				13B07FAE1A68108700A75B9A /* LilBill */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LilBillTests */,
@@ -651,7 +611,6 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E038B9DC2182C775004F20E8 /* Recovered References */,
 				E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */,
-				7FF7D6943DD6478EB6359E6D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -682,8 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */,
-				F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */,
-				B83C3372EDBD435CA3C2E7C4 /* libSpeechSynthesizer.a */,
+				872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -696,27 +654,13 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7FF7D6943DD6478EB6359E6D /* Resources */ = {
-			isa = "PBXGroup";
+		E0477B9221AE10950046C4A9 /* Products */ = {
+			isa = PBXGroup;
 			children = (
-				0A8FDCA57C654EDE89127FE1 /* Entypo.ttf */,
-				0306B84064ED41EE981B5C83 /* EvilIcons.ttf */,
-				59EA66D7471E4BCBA6306D24 /* Feather.ttf */,
-				A6C5EFF5C54F4FBCB47C0831 /* FontAwesome.ttf */,
-				5BF416C00375448E96CB48AC /* Foundation.ttf */,
-				F3060C8C227B4D4AB1C047AB /* Ionicons.ttf */,
-				B97F3DD66A574A0494C83606 /* MaterialCommunityIcons.ttf */,
-				026E9BBD7B804896A490B707 /* MaterialIcons.ttf */,
-				D77E62E326984BB3887BAA0D /* Octicons.ttf */,
-				B139AB3703CD46D3AE4A88D4 /* Roboto_medium.ttf */,
-				407C310D56FC4890A8EB1911 /* Roboto.ttf */,
-				433CF0D5D3D646239624528A /* rubicon-icon-font.ttf */,
-				71D115613C294E44BE5C0995 /* SimpleLineIcons.ttf */,
-				2B1EC6597B594F3E8040442A /* Zocial.ttf */,
+				E0477B9621AE10970046C4A9 /* libSpeechSynthesizer.a */,
 			);
-			name = Resources;
+			name = Products;
 			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -799,7 +743,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -887,12 +831,8 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
-					ProductGroup = 11CB41862194D27D0022E97F /* Products */;
-					ProjectRef = 506340A66DAF45DE9D17342B /* SpeechSynthesizer.xcodeproj */;
-				},
-				{
-					ProductGroup = 11CB41812194D27D0022E97F /* Products */;
-					ProjectRef = 387230C26F6841C7BAB95AE7 /* TextToSpeech.xcodeproj */;
+					ProductGroup = E0477B9221AE10950046C4A9 /* Products */;
+					ProjectRef = 4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -939,20 +879,6 @@
 			fileType = archive.ar;
 			path = libRCTVibration.a;
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11CB41852194D27D0022E97F /* libTextToSpeech.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTextToSpeech.a;
-			remoteRef = 11CB41842194D27D0022E97F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11CB418A2194D27D0022E97F /* libSpeechSynthesizer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpeechSynthesizer.a;
-			remoteRef = 11CB41892194D27D0022E97F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -1186,6 +1112,13 @@
 			remoteRef = E038BA052182C777004F20E8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E0477B9621AE10970046C4A9 /* libSpeechSynthesizer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpeechSynthesizer.a;
+			remoteRef = E0477B9521AE10970046C4A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1200,23 +1133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */,
+				E046103D21AE3B20009A9F12 /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				65D3574DB9A54DC98F959896 /* Entypo.ttf in Resources */,
-				EAAC5BE93C174014815033A3 /* EvilIcons.ttf in Resources */,
-				8DFFA36B6D96466AB18040B1 /* Feather.ttf in Resources */,
-				93F2F931785A45ADAC8198BE /* FontAwesome.ttf in Resources */,
-				A65CD4DFFD644A44B43ACD05 /* Foundation.ttf in Resources */,
-				C20B7B489E9047A09A76F0D8 /* Ionicons.ttf in Resources */,
-				86A8BFB1F3F442779A18C19C /* MaterialCommunityIcons.ttf in Resources */,
-				EFD902E2107F4091B989CCD0 /* MaterialIcons.ttf in Resources */,
-				EFE57C6A199643058324EE00 /* Octicons.ttf in Resources */,
-				DE3A8A5416D64C09A3CD7E74 /* Roboto_medium.ttf in Resources */,
-				5B95BF6ECE32437C8FACC515 /* Roboto.ttf in Resources */,
-				1BD1403A90194C81B7D3A667 /* rubicon-icon-font.ttf in Resources */,
-				8EB29CCA90664D5A9D0CAC69 /* SimpleLineIcons.ttf in Resources */,
-				EF2251572F7F48F1914C369F /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1282,9 +1201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				E038BA092182C798004F20E8 /* Bridger.swift in Sources */,
+				E046103C21AE3B01009A9F12 /* DollarBillModel.mlmodelc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1346,7 +1265,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBillTests/Info.plist;
@@ -1354,7 +1272,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1378,7 +1295,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBillTests/Info.plist;
@@ -1386,7 +1302,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1405,14 +1320,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = JZSVQ4ML6B;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBill/Info.plist;
@@ -1422,7 +1335,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chaz.LilBill;
+				PRODUCT_BUNDLE_IDENTIFIER = chazt;
 				PRODUCT_NAME = LilBill;
 				SWIFT_OBJC_BRIDGING_HEADER = "LilBill-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1436,13 +1349,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JZSVQ4ML6B;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBill/Info.plist;
@@ -1452,7 +1363,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chaz.LilBill;
+				PRODUCT_BUNDLE_IDENTIFIER = chazt;
 				PRODUCT_NAME = LilBill;
 				SWIFT_OBJC_BRIDGING_HEADER = "LilBill-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
@@ -1475,14 +1386,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1513,14 +1422,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1550,14 +1457,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1587,14 +1492,12 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
-					"$(SRCROOT)/../node_modules/react-native-tts/ios/TextToSpeech",
 					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1660,7 +1563,6 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1707,7 +1609,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -5,9 +5,12 @@ import {
   Text,
   View
 } from 'react-native';
-var Speech = require('react-native-speech');
+import debounce from 'lodash/debounce';
+let Speech = require('react-native-speech');
+let Vibration = require('react-native-vibration');
 
-const BEST_MATCH_THRESHOLD = 0.6;
+
+const BEST_MATCH_THRESHOLD = 0.8;
 
 import CoreMLImage from "react-native-core-ml-image";
 
@@ -26,8 +29,6 @@ export default class App extends Component<{}> {
 
     this.setState({ classifications });
 
-    return;
-
     if (classifications && classifications.length > 0) {
       // Loop through all of the classifications and find the best match
       // this.setState({ classifications });
@@ -37,8 +38,6 @@ export default class App extends Component<{}> {
         }
         else if (classification.confidence > bestMatch.confidence) {
           bestMatch = classification;
-
-
         }
       });
 
@@ -55,36 +54,52 @@ export default class App extends Component<{}> {
 
   }
 
+
   render() {
     let classification = null;
     let { classifications } = this.state || [];
+    let { bestMatch } = this.state;
+    let money = "";
 
-    if (this.state.bestMatch) {
-      if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "hotdog") {
-        classification = classification.identifier;
+    if (bestMatch && bestMatch.identifier && bestMatch.identifier === "1") {
+      classification = "One";
+      money = classification + " dollar";
+      setTimeout(Vibration.vibrate([1000]),3000);
 
-          Speech.speak({
-             text: classification.identifier,
-             voice: 'en-US'
-           })
-           .then(started => {
-             console.log('Speech started');
-           })
-           .catch(error => {
-             console.log('You\'ve already started a speech instance.');
-           });
-
-      }
-//       else {
-//         classification = "Not hot dog";
-//       }
     }
-
+    else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "5") {
+      classification = "Five";
+      money = classification + " dollars";
+      setTimeout(Vibration.vibrate([1000,2000]),3000);
+    }
+    else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "10") {
+      classification = "Ten";
+      money = classification + " dollars";
+      setTimeout(Vibration.vibrate([1000,2000,3000]),3000);
+    }
+    else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "20") {
+      classification = "Twenty";
+      money = classification + " dollars";
+      setTimeout(Vibration.vibrate([1000,2000,3000,4000]),3000);
+    }
+    else {
+      classification = "NOT DOLLAR BILL";
+    }
+    if (classification !== "NOT DOLLAR BILL") {
+      Speech.speak({
+        text: money,
+        voice: 'en-UK'
+      }).then(started => {
+        console.log('Speech started');
+      }).catch(error => {
+        console.log('You\'ve already started a speech instance.');
+      });
+    }
     return (
       <View style={styles.container}>
         <CoreMLImage modelFile="DollarBillModel" onClassification={(evt) => this.onClassification(evt)}>
           <View style={styles.container}>
-            <Text key={classification.identifier} style={styles.info}>classification</Text>
+            <Text style={styles.info}>{money}</Text>
           </View>
         </CoreMLImage>
       </View>

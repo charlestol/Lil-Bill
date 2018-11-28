@@ -23,6 +23,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		2CE2B4F1A5124910884BECC4 /* libSpeechSynthesizer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -39,9 +40,9 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */; };
-		E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
-		E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
+		E0981FE021AEA1AF00944BE9 /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */; };
+		E0981FE121AEA1E900944BE9 /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -325,6 +326,13 @@
 			remoteGlobalIDString = 134814201AA4EA6300B7C361;
 			remoteInfo = CoreMLImage;
 		};
+		E0477B9521AE10970046C4A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = SpeechSynthesizer;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -350,15 +358,17 @@
 		2D02E47B1E0B4A5D006451C7 /* LilBill-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LilBill-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* LilBill-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LilBill-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = SpeechSynthesizer.xcodeproj; path = "../node_modules/react-native-speech/SpeechSynthesizer.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libSpeechSynthesizer.a; sourceTree = "<group>"; };
 		8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libCoreMLImage.a; sourceTree = "<group>"; };
 		A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = CoreMLImage.xcodeproj; path = "../node_modules/react-native-core-ml-image/CoreMLImage.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
-		E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 		E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LilBill-Bridging-Header.h"; sourceTree = "<group>"; };
 		E038BA082182C798004F20E8 /* Bridger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bridger.swift; sourceTree = "<group>"; };
+		E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */ = {isa = PBXFileReference; lastKnownFileType = file; path = DollarBillModel.mlmodelc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -387,6 +397,7 @@
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */,
+				2CE2B4F1A5124910884BECC4 /* libSpeechSynthesizer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +585,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				A77059DDD04A4590B459FD76 /* CoreMLImage.xcodeproj */,
+				4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -590,8 +602,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */,
 				E038BA082182C798004F20E8 /* Bridger.swift */,
-				E0243ADC21AD02130038EE6F /* DollarBillModel.mlmodelc */,
 				13B07FAE1A68108700A75B9A /* LilBill */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* LilBillTests */,
@@ -629,6 +641,7 @@
 			isa = PBXGroup;
 			children = (
 				8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */,
+				872657155C6B49CB888C9CC7 /* libSpeechSynthesizer.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -637,6 +650,14 @@
 			isa = PBXGroup;
 			children = (
 				E038BA062182C777004F20E8 /* libCoreMLImage.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E0477B9221AE10950046C4A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E0477B9621AE10970046C4A9 /* libSpeechSynthesizer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -807,6 +828,10 @@
 				{
 					ProductGroup = 146834001AC3E56700842450 /* Products */;
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+				},
+				{
+					ProductGroup = E0477B9221AE10950046C4A9 /* Products */;
+					ProjectRef = 4DADF5F08C974996A27B15FD /* SpeechSynthesizer.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -1086,6 +1111,13 @@
 			remoteRef = E038BA052182C777004F20E8 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		E0477B9621AE10970046C4A9 /* libSpeechSynthesizer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libSpeechSynthesizer.a;
+			remoteRef = E0477B9521AE10970046C4A9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1100,7 +1132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0243ADE21AD02250038EE6F /* DollarBillModel.mlmodelc in Resources */,
+				E0981FE121AEA1E900944BE9 /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -1168,9 +1200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
-				E0243ADD21AD02130038EE6F /* DollarBillModel.mlmodelc in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				E038BA092182C798004F20E8 /* Bridger.swift in Sources */,
+				E0981FE021AEA1AF00944BE9 /* DollarBillModel.mlmodelc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1231,12 +1263,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBillTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1258,12 +1292,14 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBillTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1287,6 +1323,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1314,6 +1351,7 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = LilBill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1345,11 +1383,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1379,11 +1419,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1412,11 +1454,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1445,11 +1489,13 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
+					"$(SRCROOT)/../node_modules/react-native-speech",
 				);
 				INFOPLIST_FILE = "LilBill-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				OTHER_LDFLAGS = (

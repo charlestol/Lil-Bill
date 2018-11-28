@@ -5,7 +5,6 @@ import {
   Text,
   View
 } from 'react-native';
-import debounce from 'lodash/debounce';
 let Speech = require('react-native-speech');
 let Vibration = require('react-native-vibration');
 
@@ -64,23 +63,19 @@ export default class App extends Component<{}> {
     if (bestMatch && bestMatch.identifier && bestMatch.identifier === "1") {
       classification = "One";
       money = classification + " dollar";
-      setTimeout(Vibration.vibrate([1000]),3000);
 
     }
     else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "5") {
       classification = "Five";
       money = classification + " dollars";
-      setTimeout(Vibration.vibrate([1000,2000]),3000);
     }
     else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "10") {
       classification = "Ten";
       money = classification + " dollars";
-      setTimeout(Vibration.vibrate([1000,2000,3000]),3000);
     }
     else if (bestMatch && bestMatch.identifier && bestMatch.identifier === "20") {
       classification = "Twenty";
       money = classification + " dollars";
-      setTimeout(Vibration.vibrate([1000,2000,3000,4000]),3000);
     }
     else {
       classification = "NOT DOLLAR BILL";

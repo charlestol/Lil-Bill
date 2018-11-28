@@ -5,11 +5,34 @@ import {
   Text,
   View
 } from 'react-native';
-import debounce from 'lodash/debounce';
+let Speech = require('react-native-speech');
+let Vibration = require('react-native-vibration');
 
-const BEST_MATCH_THRESHOLD = 0.6;
+
+const BEST_MATCH_THRESHOLD = 0.98;
 
 import CoreMLImage from "react-native-core-ml-image";
+
+const throttle = (func, limit) => {
+  let lastFunc;
+  let lastRan;
+  return function() {
+    const context = this;
+    const args = arguments;
+    if (!lastRan) {
+      func.apply(context, args);
+      lastRan = Date.now()
+    } else {
+      clearTimeout(lastFunc);
+      lastFunc = setTimeout(function() {
+        if ((Date.now() - lastRan) >= limit) {
+          func.apply(context, args);
+          lastRan = Date.now();
+        }
+      }, limit - (Date.now() - lastRan));
+    }
+  }
+};
 
 export default class App extends Component<{}> {
 
@@ -21,12 +44,11 @@ export default class App extends Component<{}> {
     };
   }
 
-  onClassification(classifications) {
+  onClassification = throttle((classifications) => {
+    console.log("executing in onClassification");
     let bestMatch = null;
 
     this.setState({ classifications });
-
-    return;
 
     if (classifications && classifications.length > 0) {
       // Loop through all of the classifications and find the best match
@@ -37,8 +59,6 @@ export default class App extends Component<{}> {
         }
         else if (classification.confidence > bestMatch.confidence) {
           bestMatch = classification;
-
-
         }
       });
 
@@ -53,25 +73,54 @@ export default class App extends Component<{}> {
       this.setState({ bestMatch: null });
     }
 
-  }
+  }, 1000);
 
 
   render() {
     let classification = null;
     let { classifications } = this.state || [];
+    let { bestMatch } = this.state;
 
-    // if (this.state.bestMatch && this.state.bestMatch.identifier && this.state.bestMatch.identifier === "one-dollar-bill") {
-    //   classification = "ONE DOLLAR BILL";
-    // }
-    // else {
-    //   classification = "NOT DOLLAR BILL";
-    // }
-
+    if (bestMatch && bestMatch.identifier) {
+      switch(bestMatch.identifier) {
+        case "1":
+          classification = "One";
+          // Vibration.vibrate();
+          break;
+        case "5":
+          classification = "Five";
+          // Vibration.vibrate(2);
+          break;
+        case "10":
+          classification = "Ten";
+          // Vibration.vibrate(3);
+          break;
+        case "20":
+          classification = "Twenty";
+          // Vibration.vibrate(4);
+          break;
+        default:
+          break;
+      }
+    }
+    else {
+      classification = "NOT DOLLAR BILL";
+    }
+    if (classification !== "NOT DOLLAR BILL") {
+      // Speech.speak({
+      //   text: classification,
+      //   voice: 'en-US'
+      // }).then(started => {
+      //   console.log('Speech started');
+      // }).catch(error => {
+      //   console.log('You\'ve already started a speech instance.');
+      // });
+    }
     return (
       <View style={styles.container}>
         <CoreMLImage modelFile="DollarBillModel" onClassification={(evt) => this.onClassification(evt)}>
           <View style={styles.container}>
-            {/*<Text style={styles.info}>{classification}</Text>*/}
+            <Text style={styles.info}>{classification}</Text>
             {
               classifications.map((classification) => {
                 return (

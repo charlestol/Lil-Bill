@@ -38,12 +38,11 @@
 		2DCD954D1E0B4F2C00145EB5 /* LilBillTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* LilBillTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
-		923C05781B6A4B998EFD3C9A /* libTextToSpeech.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F098A97EC2424ADE91CDF111 /* libTextToSpeech.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B49D22C25B274718B4847DB3 /* libCoreMLImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D755F9C9F4B4F77862D1D96 /* libCoreMLImage.a */; };
 		E038BA092182C798004F20E8 /* Bridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = E038BA082182C798004F20E8 /* Bridger.swift */; };
+		E041AC5F21AF53BB00F3DE86 /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */; };
 		E0981FE021AEA1AF00944BE9 /* DollarBillModel.mlmodelc in Sources */ = {isa = PBXBuildFile; fileRef = E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */; };
-		E0981FE121AEA1E900944BE9 /* DollarBillModel.mlmodelc in Resources */ = {isa = PBXBuildFile; fileRef = E0981FDF21AEA1AF00944BE9 /* DollarBillModel.mlmodelc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,20 +87,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = LilBill;
-		};
-		11CB41842194D27D0022E97F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 387230C26F6841C7BAB95AE7 /* TextToSpeech.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 3A6FB2081D99E12200593599;
-			remoteInfo = TextToSpeech;
-		};
-		11CB41892194D27D0022E97F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 506340A66DAF45DE9D17342B /* SpeechSynthesizer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 134814201AA4EA6300B7C361;
-			remoteInfo = SpeechSynthesizer;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -501,22 +486,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		11CB41812194D27D0022E97F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11CB41852194D27D0022E97F /* libTextToSpeech.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		11CB41862194D27D0022E97F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11CB418A2194D27D0022E97F /* libSpeechSynthesizer.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,11 +748,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						DevelopmentTeam = JZSVQ4ML6B;
+						DevelopmentTeam = L4YNAN38VT;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						DevelopmentTeam = JZSVQ4ML6B;
+						DevelopmentTeam = L4YNAN38VT;
 						LastSwiftMigration = 1000;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -910,20 +879,6 @@
 			fileType = archive.ar;
 			path = libRCTVibration.a;
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11CB41852194D27D0022E97F /* libTextToSpeech.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libTextToSpeech.a;
-			remoteRef = 11CB41842194D27D0022E97F /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		11CB418A2194D27D0022E97F /* libSpeechSynthesizer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libSpeechSynthesizer.a;
-			remoteRef = 11CB41892194D27D0022E97F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -1178,7 +1133,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0981FE121AEA1E900944BE9 /* DollarBillModel.mlmodelc in Resources */,
+				E041AC5F21AF53BB00F3DE86 /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -1302,7 +1257,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1336,7 +1291,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
@@ -1368,7 +1323,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
@@ -1381,11 +1336,12 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chaz.LilBill;
+				PRODUCT_BUNDLE_IDENTIFIER = "miguel.hernandez.lil-bill-2";
 				PRODUCT_NAME = LilBill;
 				SWIFT_OBJC_BRIDGING_HEADER = "LilBill-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1397,7 +1353,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JZSVQ4ML6B;
+				DEVELOPMENT_TEAM = L4YNAN38VT;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-core-ml-image",
@@ -1410,10 +1366,11 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = chaz.LilBill;
+				PRODUCT_BUNDLE_IDENTIFIER = "miguel.hernandez.lil-bill-2";
 				PRODUCT_NAME = LilBill;
 				SWIFT_OBJC_BRIDGING_HEADER = "LilBill-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

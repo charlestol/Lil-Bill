@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -617,6 +616,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E038B9DC2182C775004F20E8 /* Recovered References */,
 				E038BA072182C798004F20E8 /* LilBill-Bridging-Header.h */,
+				7FF7D6943DD6478EB6359E6D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -1142,6 +1142,20 @@
 				E041AC5F21AF53BB00F3DE86 /* DollarBillModel.mlmodelc in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				65D3574DB9A54DC98F959896 /* Entypo.ttf in Resources */,
+				EAAC5BE93C174014815033A3 /* EvilIcons.ttf in Resources */,
+				8DFFA36B6D96466AB18040B1 /* Feather.ttf in Resources */,
+				93F2F931785A45ADAC8198BE /* FontAwesome.ttf in Resources */,
+				A65CD4DFFD644A44B43ACD05 /* Foundation.ttf in Resources */,
+				C20B7B489E9047A09A76F0D8 /* Ionicons.ttf in Resources */,
+				86A8BFB1F3F442779A18C19C /* MaterialCommunityIcons.ttf in Resources */,
+				EFD902E2107F4091B989CCD0 /* MaterialIcons.ttf in Resources */,
+				EFE57C6A199643058324EE00 /* Octicons.ttf in Resources */,
+				DE3A8A5416D64C09A3CD7E74 /* Roboto_medium.ttf in Resources */,
+				5B95BF6ECE32437C8FACC515 /* Roboto.ttf in Resources */,
+				1BD1403A90194C81B7D3A667 /* rubicon-icon-font.ttf in Resources */,
+				8EB29CCA90664D5A9D0CAC69 /* SimpleLineIcons.ttf in Resources */,
+				EF2251572F7F48F1914C369F /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

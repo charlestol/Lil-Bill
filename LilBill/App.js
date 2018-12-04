@@ -3,13 +3,15 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View
+  View,
+  NativeModules
 } from 'react-native';
 let Speech = require('react-native-speech');
-let Vibration = require('react-native-vibration');
-
+let CustomVibration = NativeModules.CustomVibration;
 
 const BEST_MATCH_THRESHOLD = 0.98;
+
+const MODE = "vibrate";
 
 import CoreMLImage from "react-native-core-ml-image";
 
@@ -41,18 +43,54 @@ export default class App extends Component<{}> {
     super(props);
     this.state = {
       bestMatch: null,
-      // classifications: [],
     };
   }
 
+  doSpeakBillAmount = throttle((bestMatch) => {
+    switch(bestMatch.identifier) {
+      case "1":
+        Speech.speak({
+          text: "One Dollar",
+          voice: 'en-US'
+        }).then(started => {
+        }).catch(error => {
+        });
+        break;
+      case "5":
+        Speech.speak({
+          text: "Five Dollars",
+          voice: 'en-US'
+        }).then(started => {
+        }).catch(error => {
+        });
+        break;
+      case "10":
+        Speech.speak({
+          text: "Ten Dollars",
+          voice: 'en-US'
+        }).then(started => {
+        }).catch(error => {
+        });
+        break;
+      case "20":
+        Speech.speak({
+          text: "Twenty Dollars",
+          voice: 'en-US'
+        }).then(started => {
+        }).catch(error => {
+        });
+        break;
+      default:
+        return;
+    }
+  }, 3500);
+
   doVibrationPattern = throttle((bestMatch) => {
-    
-  }, 5000);
+    CustomVibration.vibrate(bestMatch.identifier);
+  }, 3000);
 
   onClassification = throttle((classifications) => {
     let bestMatch = null;
-
-    // this.setState({ classifications });
 
     if (classifications && classifications.length > 0) {
       // Loop through all of the classifications and find the best match
@@ -69,17 +107,22 @@ export default class App extends Component<{}> {
       if (bestMatch.confidence >= BEST_MATCH_THRESHOLD) {
         // Is this best match different than the current one?
         this.setState({ bestMatch: bestMatch });
+        if (MODE === "vibrate") {
+          this.doVibrationPattern(bestMatch);
+        }
+        else {
+          this.doSpeakBillAmount(bestMatch);
+        }
       } else {
         this.setState({ bestMatch: null });
       }
     } else {
       this.setState({ bestMatch: null });
     }
-  }, 250);
+  }, 50);
 
   render() {
     let classification = null;
-    let { classifications } = this.state || [];
     let { bestMatch } = this.state;
 
     if (bestMatch && bestMatch.identifier) {
@@ -119,11 +162,11 @@ export default class App extends Component<{}> {
           <View style={styles.container}>
             <Text style={styles.info}>{classification}</Text>
             {
-              classifications.map((classification) => {
-                return (
-                  <Text key={classification.identifier} style={styles.info}>Identifier: {classification.identifier}, Confidence: {classification.confidence}</Text>
-                );
-              })
+              // classifications.map((classification) => {
+              //   return (
+              //     <Text key={classification.identifier} style={styles.info}>Identifier: {classification.identifier}, Confidence: {classification.confidence}</Text>
+              //   );
+              // })
             }
           </View>
         </CoreMLImage>
